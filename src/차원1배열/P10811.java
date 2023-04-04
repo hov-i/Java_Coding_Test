@@ -17,7 +17,7 @@ public class P10811 {
         for (int a = 0; a<m; a++) {
             i = sc.nextInt();
             j = sc.nextInt();
-            for (int c = i-1, d = j-1; d<c; d--, c++) {
+            for (int c = i-1, d = j-1; d>c; d--, c++) {
                 rever = arr[d];
                 arr[d] = arr[c];
                 arr[c] = rever;
