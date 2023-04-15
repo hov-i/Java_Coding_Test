@@ -24,9 +24,17 @@ public class P10812 {
             k = sc.nextInt();
             l = sc.nextInt();
             o = sc.nextInt();
-            for (int y = o; y<l; y++) {
+            int tmp = 0;
+            for (int y = o-1; y<l; y++) {
+                tmp = arr[k-1];
+                arr[k-1] = arr[y];
+                arr[y] = tmp;
+                k++;
 
             }
+            for (int e : arr) System.out.print(e + " ");
+            System.out.println();
         }
+
     }
 }
